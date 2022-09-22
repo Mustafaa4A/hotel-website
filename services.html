@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isha International Hotel</title>
+    <link rel="stylesheet" href="css\responsive.css">
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+    <header>
+        <div class="container container-nav">
+            <div class="site-title">
+                <h1>Isha Hotel</h1>
+                <p class="subtitle">Top Hotels In Somalia</p>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="#">Rooms</a>
+                    <div class="sub-menu rooms-menu">
+                        <ul>
+                            <li><a href="">VIP Romms</a></li>
+                            <li><a href="">Double Rooms</a></li>
+                            <li><a href="">King Rooms</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li><a href="#" class="current-page">Services</a></li>
+                    <li><a href="about.html">About us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   <div class="container">
+       <div class="row" id="service">
+           <div class="col-lg-6 col-md-6 col-sm-12" id="text">
+               <h1>Isha Hotel</h1>   
+                <p>Marriott International has nominated Hotel Paragraph located in Georgia’s seaside resort Shekvetili among the top three of the best 300 hotels in Europe.
+                Marriott International has nominated Hotel Paragraph located in Georgia’s seaside resort Shekvetili among the top three of the best 300 hotels in Europe.</p>
+                <a href=""><button>Book Now!</button></a>
+           </div>
+           <div class="col-lg-6 col-md-6 col-sm-12" id="img"></div>
+       </div>
+       <div class="row" id="booking">
+           <div class="col-lg-12 col-md-12 col-sm-12">
+               <center><h2>Fill This Form To Book A New Room</h2></center>
+               <form action="">
+                   <input type="text" id="fullName" placeholder="Full Name" required>
+                   <input type="email" id="email" placeholder="Email" required>
+                   <input type="text" id="Location" placeholder="Location" required>
+                   <input list="datalist" id="RoomsType" placeholder="Room Type" required>
+                   <datalist id="datalist">
+                       <option value="VIP Romms">
+                       <option value="Double Rooms">
+                       <option value="King Rooms">
+                   </datalist>
+                   <input type="number" id="rooms" min="1" max="30" placeholder="Number of Rooms" required>
+                   <input type="tex" id="apartment"  placeholder="Apartment" required>
+                   <input type="datetime-local" id="fromDate" placeholder="From" required>
+                   <input type="datetime-local" id="toDate" placeholder="To" required>
+                   <input type="tel" id="phone" placeholder="Phone Number" required><br>
+                   <button>Book</button>
+               </form>
+           </div>
+       </div>
+   </div>
+    <footer>
+        <div class="row">
+            <section class="col-lg-4 col-md-6 col-sm-12">
+                <center><h2>FIND US ON:</h2></center>
+                <div class="contacts">
+                    <a href=""><img src="icons/023-facebook.png" width="25vw"></a>
+                    <a href=""><img src="icons/007-twitter-1.png" width="25vw"></a>
+                    <a href=""><img src="icons/020-instagram.png" width="25vw"></a>
+                    <a href=""><img src="icons/004-whatsapp.png" width="25vw"></a>
+                </div>
+            </section>
+            <section class="col-lg-6 col-md-6 col-sm-12">
+                <div class="row">
+                    <section class="col-lg-6 col-md-6">
+                        <h1>Isha Hotel</h1>
+                        <p>Global Hotel</p>
+                    </section>
+                    <section class="col-lg-6 col-md-6">
+                        <h1>Baidoa ICT</h1>
+                        <p>Worldwide Technolgy</p>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <center class="copyright"><p>&copy; Isha Hotel & Baidoa ICT Solution</p></center>
+    </footer>
+    <script src='js/script.js'></script>
+</body>
+</html>

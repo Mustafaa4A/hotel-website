@@ -1,0 +1,876 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+button{
+    outline: 0;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background: radial-gradient(white, rgb(173, 173, 207));
+}
+
+/*********
+header layout 
+**********/
+header {
+    /* text-align: center; */
+    background-color: #f8f8f8;
+    padding: 2em 0;
+    transition: all 0.4s ease;
+}
+
+.container {
+    width: 90%;
+    /* max-width: 1000px; */
+    margin: 0 auto;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*********
+site-title and sub-title 
+**********/
+h1 {
+    font-family: 'Audiowide', cursive;
+    font-weight: 400;
+    color: #143774;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.subtitle {
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 700;
+    color: #1792d2;
+    font-size: .9rem;
+    margin: 0;
+    letter-spacing: 1.5px;
+}
+
+/*********
+nav bar
+**********/
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    color: #3f3b3b;
+    font-weight: 700;
+    padding-left: 0.25em;
+}
+
+nav a:hover {
+    color: #1792d2;
+}
+
+.current-page {
+    border-bottom: 2px solid #3f3b3b;
+}
+
+.current-page:hover {
+    color: #3f3b3b;
+}
+
+.nav-scrolled{
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    top:0px;
+    background: transparent;
+    background-color: rgb(253, 116, 75); 
+    padding: 1% 5%;
+    z-index:2;
+}
+
+/************
+Subb-menu
+************
+*/
+.sub-menu {
+    display: none;
+}
+
+nav li:hover .rooms-menu {
+    display: block;
+    position: absolute;
+    background-color: #f8f8f8;
+}
+
+nav li:hover .rooms-menu ul {
+    display: block;
+    padding: 10px;
+}
+
+nav li:hover .rooms-menu li {
+    padding: 10px;
+}
+
+/***************
+Main
+*****************/
+#main {
+    background-image: url('../images/pro.jpg');
+    font-family: 'Josefin Sans', sans-serif;
+    /* background-position: center; */
+    background-size: cover;
+    width: 100%;
+    padding: 7%;
+    /* height: auto; */
+}
+
+#main h1 {
+    padding-top: 12%;
+    color: #fff;
+    opacity: 0.9;
+    font-size: 4vw;
+}
+
+#main .name {
+    color: rgb(115, 255, 0);
+}
+
+#main p {
+    color: rgb(0, 0, 0);
+    font-size: 1.5vw;
+    font-weight: 600;
+    background-color: rgba(245, 196, 196, 0.7);
+    margin: 2% 10%;
+    padding: 4% 4%;
+}
+
+#main button {
+    background: transparent;
+    background-color: rgba(45, 46, 46, 0.5);
+    border: 1px solid #143774;
+    padding: 1.5% 4%;
+    color: white;
+    transition: all 0.4s linear 0s;
+    margin-top: 1%;
+}
+
+#main button:hover {
+    background: rgba(53, 251, 251, 0.9);
+    color: #333;
+}
+
+
+/* 
+*******
+services
+*******
+*/
+
+.service,
+.gusts,
+.special-offers,
+.rooms {
+    margin-top: 5%;
+}
+
+.service center {
+    font-size: 4vw;
+}
+
+.service h2 {
+    font-size: 120%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.service section {
+    text-align: center;
+    margin: 2% 0 5% 0;
+    background: rgb(189, 179, 179);
+    transition: all 0.4s linear 0s;
+}
+
+.service p {
+    padding: 3% 5%;
+    text-align: left;
+}
+
+.service img {
+    padding: 8% 2%;
+}
+
+.service button {
+    margin: 10%;
+    padding: 3% 4%;
+    background-color: #46beff;
+    border: none;
+    transition: all 0.4s ease 0s;
+}
+
+.service button:hover {
+    background-color: #117eb9;
+}
+
+.service section:hover {
+    transform: translate(0, 12px);
+    background-color: rgb(236, 191, 191);
+}
+
+/*
+************
+guests
+*************
+ */
+.gusts h2 {
+    font-size: 4vw;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.gusts p {
+    padding: 3% 5%;
+    text-align: left;
+}
+
+.gusts fieldset {
+    background: rgb(201, 255, 100);
+    border-radius: 5%;
+    border: none;
+}
+
+.gusts section {
+    text-align: center;
+    margin: 2% 0 5% 0;
+    transition: all 0.4s linear 0s;
+}
+
+.gusts section:hover {
+    transform: translate(0, 10px);
+}
+
+
+.gusts img {
+    border-radius: 100%;
+    /* margin-top: -22%; */
+    position: center;
+}
+
+.gusts .contacts img {
+    border-radius: 100%;
+    background-color: white;
+    border: none;
+}
+
+.gusts .contacts img:hover {
+    background-color: rgb(77, 77, 248);
+}
+
+.gusts .name {
+    color: white;
+}
+
+.gusts p {
+    padding-left: 10%;
+}
+
+.gusts .contacts {
+    margin: 10% 0%;
+}
+
+.contacts a {
+    margin-right: 2%;
+}
+
+
+/* 
+****************
+special offers
+****************
+*/
+.special-offers h2 {
+    font-size: 4vw;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.special-offers p {
+    font-size: 2vw;
+}
+
+.special-offers section {
+    margin: 2% 0 5% 0;
+}
+
+.special-offers img {
+    border-radius: 90%;
+    object-fit: 100%;
+    object-position: center;
+    transition: all 0.4s ease 0s;
+}
+
+.special-offers img:hover {
+    border: 12px solid #333;
+    transform: translate(0, 12px);
+}
+
+/* 
+*******
+rooms
+*******
+*/
+.rooms section {
+    margin: 2% 0 0% 0;
+    height: 250px;
+    transition: all ease 0.4s 0s;
+}
+
+.rooms p {
+    color: white;
+    background-color: rgba(53, 52, 52, 0.8);
+    text-align: center;
+    padding: 5%;
+    position: relative;
+    top: 40%;
+    display: none;
+
+}
+
+.rooms section:hover p {
+    display: block;
+}
+
+/* 
+*******
+footer
+*******
+*/
+footer {
+    background-color: #123;
+    margin-top: 5%;
+    padding: 2% 0%;
+    color: white
+}
+
+footer h1 {
+    padding-top: 6%;
+    font-size: 150%;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+footer p {
+    opacity: 0.8;
+}
+
+footer h2 {
+    font-size: 2vw;
+}
+
+footer .contacts {
+    margin: 5% 0%;
+    text-align: center;
+}
+
+footer .contacts a {
+    margin-right: 2%;
+}
+
+footer img {
+    border-radius: 100%;
+    background-color: white;
+    border: none;
+}
+
+footer img:hover {
+    background-color: blue;
+}
+
+.copyright {
+    margin-top: 5%;
+}
+
+/* 
+*******
+about page
+*******
+*/
+#about {
+    align-items: center;
+}
+
+#about-main {
+    background: url('../images/res3.jpg') no-repeat;
+    background-size: cover;
+    height: 540px;
+}
+
+#about-hotel {
+    padding-top: 4%;
+}
+
+#about h1,
+#about p,
+#about button {
+    margin-bottom: 5%;
+}
+
+#about p {
+    font-family: 'Fredericka the Great', cursive;
+    padding-right: 2%;
+}
+
+
+#about button {
+    margin-left: 25%;
+}
+
+
+#name {
+    animation: name-animation 4s ease-out 1s 1;
+}
+
+@keyframes name-animation {
+    0% {
+        transform: scale(4);
+        padding-left: 30%
+    }
+
+
+
+}
+
+#description {
+    animation: desc-animation 4s ease-out 1s 1;
+}
+
+@keyframes desc-animation {
+    0% {
+        transform: scale(.1)
+    }
+}
+
+#about button {
+    width: 160px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(51, 80, 50);
+    color: white;
+    transition: all 0.4s ease 0s;
+}
+
+#about button:hover {
+    background-color: rgb(188, 246, 93);
+    color: black;
+}
+
+/* contact */
+#contact {
+    margin-top: 5%;
+}
+
+#contact input {
+    height: 45px;
+}
+
+#contact input,
+#contact textarea {
+    margin-top: 2%;
+    background-color: rgb(245, 232, 112);
+    border-radius: 0;
+    padding-left: 3%;
+    font-family: 'Josefin Sans', sans-serif;
+    border: none;
+    outline: none;
+}
+
+#contact input:hover,
+#contact textarea:hover {
+    border-bottom: 2px solid black;
+}
+
+#contact #Name {
+    width: 90%
+}
+
+#contact #email {
+    width: 43%;
+    margin-right: 3%;
+}
+
+#contact #subject {
+    width: 43%;
+    margin-left: 3;
+}
+
+#contact textarea {
+    width: 90%;
+}
+
+#contact button {
+    width: 200px;
+    height: 45px;
+    margin-top: 2%;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    transition: all 0.5s ease 0s;
+}
+
+#button:hover {
+    background-color: rgb(233, 233, 243);
+    color: black;
+}
+
+#contact2 {
+    margin-top: 4%;
+}
+
+#contact2 .par {
+    margin: 5% 0;
+}
+
+#contact2 h4 {
+    background-color: black;
+    width: 120px;
+    color: white;
+    height: 50px;
+    padding: 19px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#contact2 .find {
+    padding: 2% 0 6% 6%;
+    opacity: 5;
+}
+
+.subscribe {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.subscribe h3 {
+    font-size: 1.3em;
+    margin-bottom: 3%;
+}
+
+.subscribe input {
+    margin-top: 2%;
+    background-color: rgb(245, 232, 112);
+    border-radius: 0;
+    padding-left: 3%;
+    margin-right: 1%;
+    font-family: 'Josefin Sans', sans-serif;
+    border: none;
+    outline: none;
+    height: 45px;
+}
+
+.subscribe #subName {
+    width: 30%;
+}
+
+.subscribe #subemail {
+    width: 50%;
+}
+
+.subscribe input:hover {
+    border-bottom: 2px solid black;
+}
+
+.subscribe button {
+    width: 30px;
+    background-color: rgb(245, 232, 112);
+    color: black;
+    width: 150px;
+    height: 45px;
+    border: none;
+    border-radius: 15px;
+    transition: all 0.1s ease 0s;
+}
+
+.subscribe button:hover {
+    background-color: rgb(255, 238, 88);
+}
+
+/* 
+*******
+services
+*******
+*/
+#service {
+    align-items: center;
+}
+
+#service #img {
+    height: 540px;
+    background: url('../images/room4.jpg') no-repeat;
+    background-size: cover;
+}
+
+#service h1 {
+    margin-bottom: 10%;
+    padding-top: 5%;
+}
+
+#service p {
+    padding-right: 5%;
+    margin-bottom: 5%;
+}
+
+#service button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(255, 125, 38);
+    transition: all 0.6s ease 0s;
+    margin-bottom: 3%;
+}
+
+#service button:hover {
+    background-color: rgb(212, 91, 10);
+}
+
+/* Booking */
+#booking {
+    text-align: center;
+    margin-top: 5%;
+    background-color: #143774;
+    padding: 5% 0%;
+}
+
+#booking h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 2%;
+}
+
+#booking #fullName {
+    width: 80.5%;
+
+}
+
+#booking input {
+    width: 39%;
+    height: 50px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    padding-left: 2%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+}
+
+#booking input:hover {
+    border-bottom: 2px solid black;
+}
+
+#booking button {
+    width: 160px;
+    height: 50px;
+    background-color: rgb(255, 207, 50);
+    border: none;
+    border-radius: 20px;
+    margin-top: 1%;
+    transition: all 0.1s ease-in-out 0s;
+}
+
+#booking button:hover {
+    background-color: rgb(253, 194, 0);
+}
+
+/* 
+*******
+form control
+*******
+*/
+.form-control{
+    display: inline;
+}
+.form-control small{
+    position: absolute;
+    /* top:10px; */
+    right: 58%;
+}
+.form-control.error input{
+    border: 2px solid rgb(226, 81, 81) !important;
+}
+
+/* 
+*******
+media query
+*******
+*/
+@media (min-width: 1200px) {
+
+    .service section,
+    .rooms section,
+    .special-offers section {
+        width: 32%;
+    }
+
+    .gusts section {
+        width: 24%;
+    }
+
+}
+
+@media (max-width:1199px) {
+
+    .service section,
+    .rooms section,
+    .special-offers section {
+        width: 32%;
+    }
+
+    footer {
+        margin-left: 0;
+    }
+
+    .gusts section {
+        width: 24%;
+    }
+
+    /* footer section {
+        width: 40%;
+    } */
+}
+
+@media(max-width:799px) {
+    .container-nav {
+        flex-direction: column;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 15px;
+    }
+
+
+    #main h1 {
+        font-size: 5vw;
+    }
+
+    #main p {
+        font-size: 3vw;
+    }
+
+    .service,
+    .gusts,
+    .special-offers,
+    .rooms {
+        margin-top: 15%;
+    }
+
+
+    .gusts h1,
+    .service h1,
+    .special-offers h1,
+    .rooms h1 {
+        font-size: 6vw;
+    }
+
+    /* .service h2 {
+        font-size: 120%;
+    } */
+
+    footer h1 {
+        font-size: 100%;
+    }
+
+    footer h2 {
+        font-size: 4vw;
+    }
+
+    .service section,
+    .gusts section,
+    .special-offers section,
+    .rooms section,
+    footer section {
+        width: 90%;
+        margin: 2% 5%;
+    }
+
+    .special-offers section {
+        margin-bottom: 15%;
+
+    }
+
+    .special-offers p {
+        font-size: 4vw;
+    }
+
+    /* .gusts h2 {
+        margin-bottom: 15%;
+    } */
+
+    .rooms p {
+        top: 40%;
+    }
+
+    footer .row .row section {
+        width: 40%;
+    }
+
+    footer .row .row section p,
+    .copyright p {
+        font-size: 3vw;
+        opacity: 0.8;
+    }
+
+    /* about */
+    #contact #email,
+    #contact #subject,
+    .subscribe #subemail,
+    .subscribe #subName {
+        width: 90%;
+    }
+
+    .subscribe button {
+        margin-top: 3%;
+    }
+
+    #contact2 {
+        margin-top: 5%;
+    }
+
+    #booking input {
+        width: 80.5%;
+    }
+}
+
+
+@media (max-width:499px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+
+
+    nav li {
+        margin: 0.5em 0;
+    }
+
+    .rooms p,
+    .rooms section {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+}
